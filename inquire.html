@@ -7,6 +7,13 @@
   <title>inquire.</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -33,8 +40,8 @@
         </ul>
     
         <!-- Navbar LOGO, SPLIT -->
-        <a class="navbar-brand px-lg-4 mr-0" href="#">
-          <h1>KAYLIN AIKO</h1>
+        <a class="navbar-brand px-lg-4 mr-0" href="index.html">
+          <h1 style="font-family: 'Major Mono Display', monospace;">KAYLIN AIKO</h1>
         </a>
     
         <!-- Navbar RIGHT -->
@@ -49,25 +56,41 @@
     
       </div>
     </nav>
-
-    <form action="">
-      <span>first</span>
-      <input type="text" name="name">
-
-      <span>last</span>  
-      <input type="text" name="last"> 
-
-      <span>e-mail</span>
-      <input type="email" name="email">
-
-      <span>howz it?</span>
-        <!--Make text field bigger in stylesheet-->
-      <input type="text">
-
-      <label>
-        <button type="submit">send</button>
-      </label>
-    </form>
+    <div>
+      <h1 style="writing-mode: vertical-lr; transform: rotate(180deg); float: left; font-family: 'Major Mono Display', monospace;">INQUIRE</h1>
+    </div>
+    
+    <class class="container">
+      <form id="inquiry-form" class="mx-auto" style="width: 500px; float: left;">
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">e-mail</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="inquiry">howzit?</label>
+          <textarea class="form-control" id="inquiry" name="inquiry"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="subject">area of concern</label>
+          <select class="form-control" id="subject" name="subject">
+            <option value="sales">Sales</option>
+            <option value="support">Commission Pieces</option>
+            <option value="feedback">Feedback</option>
+            <option value="feedback">Future Shows</option>
+            <option value="feedback">Other</option>
+          </select>
+        </div>
+        <div class="mx-auto" style="text-align: center;">
+          <input type="submit" class="btn btn-primary" value="Submit"> 
+        </div>
+      </form>
+    </class>
+  
+    
   
 </body>
 </html>
