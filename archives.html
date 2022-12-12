@@ -14,6 +14,42 @@
 
 </head>
 <body>
+  <style>
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+  </style>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light white">
     <div class="container">
@@ -55,46 +91,39 @@
 
   <!-- Photo Grid -->
   <section>
-    
-    <div class="row">
-      <div class="column">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-        <h1>ARCHIVES</h1>
-      </div>
-    </div>
+    <div class="container">
+      <h1 style="font-family: 'Major Mono Display', monospace; writing-mode: vertical-lr; transform: rotate(180deg); float: right;">ARCHIVES</h1>
+      <div class="row">
+        <div class="column">
+          <img src="images/Peru.png" alt="holder">
+          <img src="images/Waimea Jumping Rock.png" alt="holder">
+          <img src="images/drewlol.png" alt="">
+          <img src="images/rockz.png" alt="">
+        </div>
+      
 
-    <div class="row">
-      <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-      <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-      </div>
-    </div>
+        <div class="column">
+          <img src="images/Bridesmaid.png" alt="holder">
+          <img src="images/SAN JOSE.png" alt="holder">
+          <img src="images/TAHITI CHEIF.png" alt="holder">
+          <img src="images/E0598DDE-6B00-4C3A-B828-E10940D56D51_1_105_c 1.png" alt="holder">
+        </div>
 
-    <div class="row">
-      <div class="column">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-      </div>
-    </div>
+          <div class="column">
+            <img src="images/E0A5417D-E093-423A-8B2F-F5CA4740488B_1_105_c 1.png" alt="holder">
+            <img src="images/MEL BW.png" alt="holder">
+            <img src="images/PERU LLAMA.png" alt="">
+            <img src="images/bobby.png" alt="">
+          </div>
 
-    <div class="row">
-      <div class="column">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="column">
-        <img src="images/lychees-732x549-thumbnail-732x549.jpeg" alt="holder" style=" width: 100%">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
+          <div class="column">
+            <img src="images/bwhall.png" alt="">
+            <img src="images/waimea.png" alt="">
+            <img src="images/arty.png" alt="">
+            <img src="images/boat.png" alt="">
+          </div>
+      </div>   
     </div>
   </section>
 
