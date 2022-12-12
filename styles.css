@@ -1,3 +1,7 @@
 *{
   font-family: 'Roboto Mono', monospace;
 }
+
+.jumbotron {
+  background-image: url(images/Kaimanaslanding.png);
+}
